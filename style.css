@@ -1,0 +1,49 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  background-color: #bbada0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #cdc1b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Mobile Responsive Grid */
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 8px;
+  }
+  .cell {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+  }
+}
+
+/* Tile colors */
+.cell-0 { background: #cdc1b4; }
+.cell-2 { background: #eee4da; }
+.cell-4 { background: #ede0c8; }
+.cell-8 { background: #f2b179; color: white; }
+.cell-16 { background: #f59563; color: white; }
+.cell-32 { background: #f67c5f; color: white; }
+.cell-64 { background: #f65e3b; color: white; }
+.cell-128 { background: #edcf72; color: white; font-size: 22px; }
+.cell-256 { background: #edcc61; color: white; font-size: 22px; }
+.cell-512 { background: #edc850; color: white; font-size: 22px; }
+.cell-1024 { background: #edc53f; color: white; font-size: 18px; }
+.cell-2048 { background: #edc22e; color: white; font-size: 18px; }
